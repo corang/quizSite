@@ -24,16 +24,32 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "quizSite", ".", "{E8F63B42-
 		SlnRelativePath = "..\quizSite\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizCreator", "quizCreator\quizCreator.csproj", "{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Debug|x64.Build.0 = Debug|Any CPU
+		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Release|x64.ActiveCfg = Debug|Any CPU
+		{E8F63B42-3AF2-42DA-85F2-036495810C9B}.Release|x64.Build.0 = Debug|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Debug|x64.Build.0 = Debug|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Release|x64.ActiveCfg = Release|Any CPU
+		{BAAD0D9C-0297-4335-9EB2-40D75CFCAB5B}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

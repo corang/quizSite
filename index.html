@@ -14,14 +14,17 @@
         <h1>The Quiz Site!</h1>
         <p>An AngularJS based website for taking custom multiple choice quizzes</p>
     </div>
-    <div class="container text-center" ng-controller="Question">
+    <div class="container text-center" id="question" ng-controller="Question">
         <div class="center-block">
             <h1>{{questions[currentQuestion][0]}}</h1>
             <div ng-repeat="answer in questions[currentQuestion][1]">
                 <input ng-model="$parent.selectedOption" value="{{$index}}" type="radio" />{{answer}}
             </div>
-            <input type="button" ng-click="checkAnswer()" value="Submit"/>
+            <input type="button" ng-click="checkAnswer(selectedOption)" value="Submit"/>
         </div>
+    </div>
+    <div id="done" style="display: none;">
+        <h1>You have completed this quiz!</h1>
     </div>
 </body>
 </html>
