@@ -1,15 +1,24 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="Quiz">
 <head>
     <script src="Scripts/angular.js"></script>
     <script src="Scripts/jquery-1.9.1.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
     <script src="script.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <title>Quiz!</title>
 </head>
 <body>
-    test
+    <div class="jumbotron text-center">
+        <h1>The Quiz Site!</h1>
+        <p>An AngularJS based website for taking custom multiple choice quizzes</p>
+    </div>
+    <div class="container text-center" ng-controller="Question">
+        <div class="center-block">
+            <h1> {{questions[currentQuestion][0]}}</h1>
+            <p ng-repeat="answer in questions[currentQuestion][1]">{{answer}}</p>
+        </div>
+    </div>
 </body>
 </html>
