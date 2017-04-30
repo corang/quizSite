@@ -16,8 +16,11 @@
     </div>
     <div class="container text-center" ng-controller="Question">
         <div class="center-block">
-            <h1> {{questions[currentQuestion][0]}}</h1>
-            <p ng-repeat="answer in questions[currentQuestion][1]">{{answer}}</p>
+            <h1>{{questions[currentQuestion][0]}}</h1>
+            <div ng-repeat="answer in questions[currentQuestion][1]">
+                <input ng-model="$parent.selectedOption" value="{{$index}}" type="radio" />{{answer}}
+            </div>
+            <input type="button" ng-click="checkAnswer()" value="Submit"/>
         </div>
     </div>
 </body>
